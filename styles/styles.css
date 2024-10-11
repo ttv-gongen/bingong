@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* * START RESETS */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display  : block;
+}
+
+/* End resets */
+
+html {
+    color         : whitesmoke;
+    text-align    : center;
+    font-family   : "Nunito", sans-serif;
+    text-transform: uppercase;
+}
+
+a {
+    color: whitesmoke;
+}
+
+a:hover {
+    color      : #c094ce;
+    font-weight: bold;
+}
+
+header {
+    margin-bottom: 1.5rem;
+}
+
+body {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    height          : 100vh;
+    background-color: #1c1c1c;
+
+}
+
+h1 {
+    color: goldenrod;
+}
+
+.bingo-card {
+    display              : grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows   : repeat(5, 1fr);
+    gap                  : 5px;
+    width                : 75vh;
+    height               : 75vh;
+    background-color     : #2e2e2e;
+    padding              : 10px;
+    border               : 0.33rem solid #444;
+    box-shadow           : 0 0 1.2rem rgba(0, 0, 0, 0.5);
+}
+
+.cell {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    background-color: #faf9f6;
+    color           : black;
+    font-size       : 1rem;
+    border          : 2px solid #555;
+    cursor          : pointer;
+    transition      : background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #cfcfcfb2;
+}
+
+#cell-12 {
+    background-color: #2e2e2e;
+    color           : goldenrod;
+    font-weight     : bold;
+}
+
+#signature {
+    margin: 1.5rem;
+}
